@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a8a; /* Blue color */
+  margin-bottom: 40px;
+}
+
+/* Wrapper for form + filter */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between; /* Form left, filter right */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Form Section */
+.movie-form {
+  flex: 3;
+  background: rgba(30, 58, 138, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.movie-form input,
+.movie-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #1e3a8a;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.movie-form input:focus,
+.movie-form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Horizontal groups */
+.group {
+  display: flex;
+  gap: 15px;
+}
+
+.group input,
+.group select {
+  flex: 1;
+}
+
+/* Button */
+.movie-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.movie-form button:hover {
+  background-color: #3b82f6;
+}
+
+/* Filter Section */
+.filter-container {
+  flex: 1;
+  background: rgba(30, 58, 138, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.filter-container h3 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.filter-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #1e3a8a;
+  background-color: #ffffff;
+  color: #1e3a8a;
+}
+
+/* Movies List */
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Individual Movie Card */
+.movie-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-card h4 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 18px;
+}
+
+.movie-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+.filter-buttons button + button {
+  margin-left: 10px; /* Small space between Apply Filter and Reset */
+}

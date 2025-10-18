@@ -1,0 +1,44 @@
+.movie-card {
+  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.movie-card h3 {
+  margin: 0 0 10px;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.movie-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.movie-card p strong {
+  color: #555;
+}
+
+/* Status badges */
+.status-wishlist {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.status-watching {
+  color: #03a9f4;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #4caf50;
+  font-weight: 600;
+}
